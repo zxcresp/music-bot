@@ -1,2 +1,2 @@
-# music-bot
-Telegram music bot
+# Music Bot for Telegram
+***In development***

@@ -10,7 +10,7 @@ bot = telebot.TeleBot(BOT_TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.send_message(message.chat.id, 'hi.. 1000-7.. I`m dead inside, I wanna to kill myself, LOL. 6767676767')
+    bot.send_message(message.chat.id, 'hi')
 
 @bot.message_handler(content_types=["audio"])
 def receive_audio(message):

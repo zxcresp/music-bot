@@ -68,3 +68,18 @@ def clear_songs():
 
     connection.commit()
     connection.close()
+
+def get_song_by_id(user_id, song_id):
+    connection = sqlite3.connect("music.db")
+    cursor = connection.cursor()
+
+    cursor.execute("""
+        SELECT id, file_id, title, duration
+        FROM songs
+        WHERE user_id = ? AND id = ?
+    """, (user_id, song_id))
+
+    song = cursor.fetchone()
+    connection.close()
+
+    return song

@@ -1,28 +1,29 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Music Player</title>
+    <title>Music Player</title>
 
-        <script src="https://telegram.org/js/telegram-web-app.js"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
+<body>
+    <div class="app">
+        <h1>My Music</h1>
 
-        <div class="app">
-
-            <h1>My Music</h1>
-
-            <div id="songs">
-                Loading...
-            </div>
-
+        <div id="songs">
+            Loading...
         </div>
 
-        <script src="script.js"></script>
+        <div class="player-container">
+            <p id="now-playing">Select a song to play</p>
+            <audio id="audio-player" controls></audio>
+        </div>
+    </div>
 
-    </body>
-    </html>
+    <script src="script.js"></script>
+</body>
+</html>

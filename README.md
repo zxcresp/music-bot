@@ -2,9 +2,13 @@
 
 A personal music library built as a Telegram Mini App with a Python backend.
 
-> **Work in Progress**
->
-> This project is currently under active development. The current version is an MVP, and many planned features have not been implemented yet.
+## Known Issues
+
+* Audio playback may start with a noticeable delay.
+* Playback isn't working on Telegram Desktop, though it's more or less fine on the phone and the web version.
+* Audio streaming and playback performance are still being investigated.
+
+***The project is still under development, and these issues will be addressed in future updates.***
 
 ## About
 
